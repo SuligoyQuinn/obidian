@@ -24,7 +24,7 @@ $$
 \sum^n_{i=m}(f(i)+g(i))=\sum^n_{i=m}f(i)+\sum^n_{i=m}g(i)
 $$
 ## Sum of Geometric Progression
-- Theorem: $a,r\in \mathbb{R}$ and $r\neq 0$ then
+- Theorem: $a,r\in \mathbb{R}$ and $r\neq 1$ then
 $$
 \sum^n_{j=0}ar^j=\frac{ar^{n+1}-a}{r-1}
 $$

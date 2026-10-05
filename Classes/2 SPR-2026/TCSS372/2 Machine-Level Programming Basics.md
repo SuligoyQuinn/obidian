@@ -1,0 +1,73 @@
+# Definition
+- *Architecture*
+	- The part of a processor design that one needs to understand to write assembly code
+	- Ex) Instruction set, register count
+- *Micro-architecture*
+	- Implementation of the architecture
+	- Ex) cache size and core frequency
+# Assembly Programmer's View
+- PC: Program counter
+	- Address of next instruction
+	- Called EIP (IA32) or RIP (x86-64)
+- Register file
+	- Heavily used program data
+- Condition codes
+	- Store status information about most recent arithmetic operation
+	- Used for conditional branching
+- Memory
+	- Byte addressable array
+	- Code, user data, some OS data
+	- Stack to support procedures
+# Assembly Data Types
+- Integer
+	- 1, 2, 4, or 8 bytes
+	- Data values
+	- Addresses (untyped pointers)
+- Floating point data
+	- 4, 8, or 10 bytes
+- Code
+	- Byte sequence encoding series of instructions
+- No aggregate types
+	- arrays or structures
+	- Contiguously allocated bytes in memory
+# Assembly Operations
+- Perform arithmetic functions on register or memory data
+- Transfer data between memory and register
+	- Load data from memory into register
+	- Store register data into memory
+- Transfer control
+	- Branch
+	- Jump
+# IA32 Registers
+- 8 Registers
+- `%eax
+	- Accumulate
+	- Add data to register
+	- Used as return
+- `%ebx
+	- Base
+- `%acx
+	- Counting
+- `%adx
+	- Data
+- `%esi
+	- Source index
+- `%edi
+	- Destination index
+- `%esp
+	- Stack pointer
+- `%sbp
+	- Base pointer
+# Moving Data
+- `MOV`      $S,D$    $D \leftarrow S$
+	- `movb` Move byte 8 bits
+	- `movw` Move word 16 bits
+	- `movl` Move double word 32 bits
+	- `movq` Move quad word 64 bits
+		- Cannot move 64 bit immediate value
+		- `movabsq`
+## Operand Types
+- Immediate: Constant integer data
+	- Like C constant but prefixed with $
+- Register: One of 8 integer registers
+- Memory: 4 consecutive bytes of memory at address given by register
