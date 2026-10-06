@@ -1,0 +1,29 @@
+# Introduction to Databases
+- DBMS Provides
+	- efficient, reliable, convenient, and safe multi-user storage of and access to massive amounts of persistent data
+- Key Concepts
+	- Data Model
+	- Schema versus data
+		- Schema is description of table
+	- Data definition language
+		- Used to create the tables
+	- Data manipulation language
+		- How to insert, update, delete data
+		- How to query data
+- Key People
+	- DBMS implementer
+		- Implements ER diagram into actual tables
+	- Database designer
+		- Designs ER diagram
+	- Database application developer
+		- Designs query and user interface
+	- Database administrator
+		- Tunes database performance
+# Components of a Database System
+- Database
+	- actual structure containing data
+- DBMS
+	- Program that reads/writes directly to database
+	- MySQL, SQL Server, etc
+- Application
+	- Program used by users to work with database
